@@ -13,7 +13,7 @@ BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 DELEGACIONES = {
     "bizkaia bilbao": ["desarrolloweb@axor.es"],
     "bizkaia erletxes": ["j.prado@axor.com"],
-    "bipuzkoa": ["p.gonzalez@axor-rentals.com", "astigarraga@axor-rentals.com"],
+    "gipuzkoa": ["p.gonzalez@axor-rentals.com", "astigarraga@axor-rentals.com"],
     "araba": ["a.urresola@axor-rentals.com", "vitoria@axor-rentals.com"],
     "navarra": ["comercial.navarra@axor-rentals.com", "pamplona@axor-rentas.com"],
     "cantabria santander": ["c.delcampo@axor-rentals.com", "r.garcia@axor-rentals.com"],
