@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario AXOR rentals</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="icon" type="image/x-icon" href="imagenes/logo.png">
+    </head>
+    <body>
+        <header>
+            <div class="topbar">
+                <div class="topbar-left">
+                    <a href="mailto:axor@axor-rentals.com">axor@axor-rentals.com</a> /
+                    <a href="tel:902363534">902 36 35 34</a>
+                </div>
+            </div>
+            <div class="header-main">
+                <a href="https://axor-rentals.com/sobre-axor-rentals/" target="_blank">
+                <img src="imagenes/logo.png" alt="logo" class="logo">
+                </a>
+                <nav class="navegador">
+                    <ul>
+                        <li><a href="https://axor-rentals.com/sobre-axor-rentals/">SOBRE AXOR</a></li>
+                        <li><a href="https://axor-rentals.com/delegaciones/">DELEGACIONES</a></li>
+                        <li><a href="https://axor-rentals.com/alquiler-maquinaria/">ALQUILER MAQUINARIA</a></li>
+                        <li><a href="https://axor-rentals.com/novedades/">NOVEDADES</a></li>
+                        <li><a href="https://axor-rentals.com/ofertas-trabajo-axor-rentals/">TRABAJA EN AXOR</a></li>
+                        <li><a href="https://portalweb.axor.es/Account/Login">ÁREA CLIENTES</a></li>
+                        <li><a href="http://localhost:8081/#">CONTACTO</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+            <div class="imagen-nav"><img src="imagenes/img1.png" alt="imagen1"></div>
+
+        </header>
+        <main>
+            <section class="contact-section">
+            
+                <div class="info">
+                    <h2>¿Cómo podemos ayudarte?</h2>
+                    <p>
+                        Consulta con nuestros expertos qué máquina o herramientas necesitas para tu trabajo.
+                        Dependiendo de la obra, sus especificaciones, condiciones del terreno, dimensiones
+                        de máquinas, etc. en AXOR rentals te recomendaremos la solución óptima.
+                    </p>
+
+                    <a href="mailto:axor@axor-rentals.com">axor@axor-rentals.com</a>
+                    <p class="teléfono">902 36 35 34</p>
+
+                    <div class="redes">
+                        <a href="https://www.linkedin.com" target="_blank">
+                            <img src="imagenes/linkedIn.png" alt="LinkedIn"></a>
+                        <a href="https://www.instagram.com" target="_blank">
+                            <img src="imagenes/instagram.png" alt="Instagram"></a>
+                    </div>
+                </div>
+            <section class="form-container">
+                
+                <form action="http://localhost:8081/enviar" method="POST">
+                    <h1>Solicitud de presupuesto</h1>
+                    <input type="text" name="nombre" placeholder="Nombre">
+                    <br>
+                    <input type="tel" name="telefono" placeholder="Nº teléfono" required>
+                    <br>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <br>
+                    <select name="delegacion" required>
+                        <option value="">--Selecciona una delegación--</option>
+                        <option value="alava">Álava</option>
+                        <option value="asturias">Asturias</option>
+                        <option value="barcelona">Barcelona</option>
+                        <option value="bizkaia bilbao">Bizkaia Bilbao</option>
+                        <option value="bizkaia erletxes">Bizkaia Erletxes</option>
+                        <option value="burgos">Búrgos</option>
+                        <option value="caceres">Cáceres</option>
+                        <option value="cadiz">Cádiz</option>
+                        <option value="cantabria santander">Cantabria Santander</option>
+                        <option value="cantabria reinosa">Cantabria Reinosa</option>
+                        <option value="cordoba">Córdoba</option>
+                        <option value="gipuzkoa">Gipuzkoa</option>
+                        <option value="huelva">Huelva</option>
+                        <option value="jaen">Jaén</option>
+                        <option value="madrid pinto">Madrid Pinto</option>
+                        <option value="madrid torrejon">Madrid Torrejón</option>
+                        <option value="malaga">Málaga</option>
+                        <option value="navarra">Navarra</option>
+                        <option value="ourense">Ourense</option>
+                        <option value="sevilla">Sevilla</option>
+                        <option value="tarragona">Tarragona</option>
+                        <option value="zaragoza">Zaragoza</option>
+                    </select>
+                    <br>
+                    <input type="text" name="asunto" placeholder="Asunto">
+                    <br>
+                    <textarea name="mensaje" placeholder="Máquina necesaria, tamaño o tipo, fecha de entrega y recogida, ¿necesitas transporte?"></textarea>
+                    <br>
+                    <button type="submit">Enviar solicitud</button>
+                </form>
+            </section>
+        </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="contacto1">
+                <a href="#">Política de cookies</a>
+                <a href="#">Protección de datos</a>
+                <a href="#">Aviso Legal</a>
+                <a href="#">Canal Ético</a>
+                <a href="#">Calidad</a>
+            </div>
+
+            <img src="imagenes/logo2.png" alt="Logo2">
+        </div>
+
+        <p class="copyright">© AXOR rentals 2026</p>
+    </footer>
+    </body>
+</html>
