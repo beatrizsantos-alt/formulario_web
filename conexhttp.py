@@ -75,8 +75,10 @@ def enviar_email(delegacion, fecha, hora, nombre, email, telefono, asunto, mensa
     try:
         server = smtplib.SMTP_SSL('smtp.serviciodecorreo.es', 465)
 
-        servidor_email = "pruebas@axor.es"
-        contraseña_email = "PruebasAxor-2026"
+        import os
+
+        servidor_email = os.environ.get("EMAIL_USER")
+        contraseña_email = os.environ.get("EMAIL_PASSWORD")
 
         server.login(servidor_email, contraseña_email)
 
