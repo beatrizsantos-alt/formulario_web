@@ -9,10 +9,10 @@ app = Flask(__name__)
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-# 📧 Delegaciones (igual que antes)
+# Delegaciones 
 DELEGACIONES = {
-    "bizkaia bilbao": ["desarrolloweb@axor.es"],
-    "bizkaia erletxes": ["j.prado@axor.com"],
+    "bizkaia bilbao": ["j.prado@axor-rentals.com"],
+    "bizkaia erletxes": ["j.prado@axor-rentals.com"],
     "gipuzkoa": ["p.gonzalez@axor-rentals.com", "astigarraga@axor-rentals.com"],
     "araba": ["a.urresola@axor-rentals.com", "vitoria@axor-rentals.com"],
     "navarra": ["comercial.navarra@axor-rentals.com", "pamplona@axor-rentas.com"],
@@ -35,17 +35,17 @@ DELEGACIONES = {
     "ourense": ["x.magallais@axor-rentals.com", "ourense@axor-rentals.com"],
 }
 
-# 📄 SERVIR HTML
+# SERVIR HTML
 @app.route("/")
 def home():
     return send_from_directory(BASE_DIR, "formularioes.html")
 
-# 📄 SERVIR ARCHIVOS (css, js, imágenes)
+# SERVIR ARCHIVOS (css, js, imágenes)
 @app.route("/<path:path>")
 def static_files(path):
     return send_from_directory(BASE_DIR, path)
 
-# 📩 FORMULARIO
+# FORMULARIO
 @app.route("/enviar", methods=["POST"])
 def enviar():
     nombre = request.form.get("nombre")
@@ -62,7 +62,7 @@ def enviar():
 
     return "FORMULARIO ENVIADO"
 
-# 📧 EMAIL
+# EMAIL
 def enviar_email(delegacion, fecha, hora, nombre, email, telefono, asunto, mensaje):
     delegacion = delegacion.lower()
 
